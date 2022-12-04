@@ -45,10 +45,10 @@ header {
    }
 
 .navigation ul{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
   font-size: 20px;
   }
 
@@ -56,8 +56,8 @@ header {
   padding-left: 20px;
   color: #4bafb4;
   cursor: pointer; 
-  
-/* Added styling to the hero section */  
+
+  /* Added styling to the hero section */  
 }
 .hero-banner{
   display: flex;
@@ -83,4 +83,27 @@ header {
   display: flex;
   width: 25%;
   height: 300px;
+  }
+/* Added CSS to About Me section */
+  
+#about{
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;  
+}
+
+.abt-me {
+  display: flex;
+  width: 20%;
+  font-size: 30px;
+  align-items: center;
+  justify-content: flex-end;
+  border-right: 5px solid rgba(49, 49, 187, 0.607);
+}
+
+.abt-me1 {
+  display: flex;
+  width: 75%;
+  font-size: 20px;
+  margin-left: 2%;
   }
