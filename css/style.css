@@ -72,16 +72,16 @@ header {
 }
 .sub-title {
   display: flex;
-  width: 70%;
+  width: 75%;
   font-size: 30px;
   color: blueviolet;
-  justify-content:center;
+  justify-content:flex-end;
   align-items:center;  
 }
 
 .my-image {
   display: flex;
-  width: 25%;
+  width: 20%;
   height: 300px;
   }
 /* Added CSS to About Me section */
@@ -92,16 +92,16 @@ header {
   margin-bottom: 15px;  
 }
 
-.abt-me {
+#about h2 {
   display: flex;
   width: 20%;
-  font-size: 30px;
+  font-size: 34px;
   align-items: center;
   justify-content: flex-end;
   border-right: 5px solid rgba(49, 49, 187, 0.607);
 }
 
-.abt-me1 {
+#about p {
   display: flex;
   width: 75%;
   font-size: 20px;
@@ -110,23 +110,27 @@ header {
 
 
   /* Footer Styles*/
-footer {
+footer{
   display: flex;
-  width:100%
+  width:100%;
+  margin-top: 10px;
   
 }
 footer h2{
   display: flex;
   width: 20%;
   margin-bottom: 25px;
-  font-size: 34px;
+  font-size: 30px;
   justify-content: flex-end;
   border-right: 5px solid rgba(49, 49, 187, 0.607);
 }
 footer a {
   display: flex;
-  padding-left: 80px;
+  flex:1;
+  padding-right: 10px;
   font-size: 24px;
-  margin-top: 10px;
+  width: 75%; 
+  justify-content:space-evenly;
+  justify-items: flex-end;
       
 }
