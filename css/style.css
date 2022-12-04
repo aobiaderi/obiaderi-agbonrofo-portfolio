@@ -107,3 +107,26 @@ header {
   font-size: 20px;
   margin-left: 2%;
   }
+
+
+  /* Footer Styles*/
+footer {
+  display: flex;
+  width:100%
+  
+}
+footer h2{
+  display: flex;
+  width: 20%;
+  margin-bottom: 25px;
+  font-size: 34px;
+  justify-content: flex-end;
+  border-right: 5px solid rgba(49, 49, 187, 0.607);
+}
+footer a {
+  display: flex;
+  padding-left: 80px;
+  font-size: 24px;
+  margin-top: 10px;
+      
+}
