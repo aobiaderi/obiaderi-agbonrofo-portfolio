@@ -95,7 +95,7 @@ header {
 #about h2 {
   display: flex;
   width: 20%;
-  font-size: 34px;
+  font-size: 30px;
   align-items: center;
   justify-content: flex-end;
   border-right: 5px solid rgba(49, 49, 187, 0.607);
@@ -107,6 +107,73 @@ header {
   font-size: 20px;
   margin-left: 2%;
   }
+
+ /* Added styling to work section */
+ #work {
+  display: flex;
+  margin-bottom: 15px;
+  width: 100%;
+
+ }
+ .my-work {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-right: 5px solid rgba(49, 49, 187, 0.607);
+  font-size: 30px;
+}
+
+.portfolioGridArea{
+ 
+display: flex;
+font-weight: bolder;
+color: darkblue;
+flex: 1;
+height: 350px;
+}
+
+#surf-report {
+  
+background-image: url(/images/02-portfolio-4.jpg);
+ }
+
+#led-wall{
+ 
+background-image: url(/images/02-portfolio-1.jpg);
+}
+
+#calculator {
+   
+background-image: url(/images/02-portfolio-2.jpg);
+}
+#pastel-puzzles {
+  
+background-image: url(/images/02-portfolio-3.jpg);
+}
+
+#run-buddy {
+
+background-image: url(/images/02-run-buddy.jpg);      
+}
+
+.portfolioGridArea ul{
+  
+list-style-type: none;
+}
+
+.portfolioGridArea {
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+margin: 5px;
+cursor: pointer;
+align-content: end;
+border-bottom: 5px solid #6600ff;
+}
+
+
+
 
 
   /* Footer Styles*/
