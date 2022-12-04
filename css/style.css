@@ -158,8 +158,9 @@ background-image: url(/images/02-run-buddy.jpg);
 }
 
 .portfolioGridArea ul{
-  
+
 list-style-type: none;
+background-color: #4bafb4;
 }
 
 .portfolioGridArea {
@@ -170,9 +171,16 @@ margin: 5px;
 cursor: pointer;
 align-content: end;
 border-bottom: 5px solid #6600ff;
+display:flex;
+flex-direction: column;
+justify-content: flex-end;
 }
 
+/* Transforming the work section */
 
+ #surf-report:hover{
+  transform:scale(1.05);
+}
 
 
 
