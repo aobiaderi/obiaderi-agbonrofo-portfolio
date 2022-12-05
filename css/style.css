@@ -62,7 +62,7 @@ header {
 .hero-banner{
   display: flex;
   width: 100%;
-  background-image: url(./images/02-hero-bg.jpg);
+  background-image: url(/images/02-hero-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -132,7 +132,7 @@ header {
   border-right: 5px solid rgba(49, 49, 187, 0.607);  
 
 }   
-    /* Added margins */
+ 
 #surf-report{
   grid-area:surf-report;
   background-image: url(./images/02-portfolio-4.jpg);
@@ -142,24 +142,24 @@ header {
 
 #led-wall{
   grid-area:led-wall;
-  background-image: url(./images/02-portfolio-1.jpg);
+  background-image: url(/images/02-portfolio-1.jpg);
   
 }
 
 #calculator{
   grid-area:calculator;
-  background-image: url(./images/02-portfolio-2.jpg);
+  background-image: url(/images/02-portfolio-2.jpg);
 }
 
 #pastel-puzzles{
   grid-area:pastel-puzzles;
-  background-image: url(./images/02-portfolio-3.jpg);
+  background-image: url(/images/02-portfolio-3.jpg);
   
 }
 
 #run-buddy{
   grid-area:run-buddy;
-  background-image: url(./images/02-run-buddy.jpg);
+  background-image: url(/images/02-run-buddy.jpg);
 }
 .portfolioGridArea {
   background-position: center;
@@ -167,13 +167,13 @@ header {
   background-repeat: no-repeat;
   margin: 5px;
   cursor: pointer;
-  align-content: end;
   border-bottom: 5px solid #6600ff;
-} 
+}
+/* set properties for topic class */ 
 .topic  {
-  width:40%;
+ width:40%;
  background-color:#4bafb4;
-word-wrap: break-word}
+ word-wrap: break-word}
 
 
 /* Transforming the work section */
@@ -186,19 +186,19 @@ word-wrap: break-word}
 
   /* Footer Styles*/
 
-footer{
+#contact{
   display: grid;
-  grid-template-rows: 50px;
-  grid-template-columns: 20% 15% 15% 15% 15% 15% ;
+  grid-template-rows: auto;
+  grid-template-columns: 20% auto auto auto auto auto ;
   grid-gap:10px;
   grid-template-areas: 
-  "contact-me nb email gh Lin fb";
+  "contacts nb ema gh lk fb";
   margin-bottom: 50px;
 }
   
-.contact-me{
+.contacts{
   display: grid;
-  grid-area: contact-me;
+  grid-area: contacts;
   font-size: 30px;
   justify-content: flex-end;
   border-right: 5px solid rgba(49, 49, 187, 0.607);  
@@ -208,16 +208,16 @@ footer{
   grid-area: nb;
 }
 
-#email{
-  grid-area: email;
+#ema{
+  grid-area: ema;
 }
 
 #gh{
   grid-area: gh;
 }
 
-#Lin{
-  grid-area: Lin;
+#lk{
+  grid-area: lk;
 }
 
 #fb{
@@ -225,12 +225,12 @@ footer{
 }
 
 .contact-me1{
-  /* display:grid;
-  width: 75%; */
+  display:grid;
+  width: 85%;
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  font-size: 22px;
+  justify-content: flex-end;
+  /* align-items: center; */
+  font-size: 15px;
 
 }
 /* Adjustment for media queries */
