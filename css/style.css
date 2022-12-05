@@ -190,6 +190,7 @@ footer{
   display: grid;
   grid-template-rows: 50px;
   grid-template-columns: 20% 15% 15% 15% 15% 15% ;
+  grid-gap:10px;
   grid-template-areas: 
   "contact-me nb email gh Lin fb";
   margin-bottom: 50px;
@@ -224,7 +225,8 @@ footer{
 }
 
 .contact-me1{
-  display:flex;
+  display:grid;
+  width: 75%;
   cursor: pointer;
   justify-content: center;
   align-items: center;
@@ -232,7 +234,25 @@ footer{
 
 }
 /* Adjustment for media queries */
+
+@media only screen and (max-width: 1107px) {
+  footer{
+    display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+
+    /* grid-template-rows: 100%;
+    grid-template-columns: 100% ;
+    grid-template-areas: 
+    "contact-me nb email gh Lin fb";
+    margin-bottom: 50px; */
+  }
+}
+
 @media only screen and (max-width: 770px) {
+
   #work{
     display: grid;
     margin-left: 5%;
