@@ -171,12 +171,9 @@ header {
   align-content: end;
   border-bottom: 5px solid #6600ff;
 } 
-/* .portfolioGridArea ul{
-
-list-style-type: none;
-background-color: #4bafb4;
-} */
-
+.topic  {
+ 
+  background-color:#4bafb4;}
 
 
 /* Transforming the work section */
@@ -233,4 +230,34 @@ footer{
   align-items: center;
   font-size: 22px;
 
+}
+/* Adjustment for media queries */
+@media only screen and (max-width: 770px) {
+  #work{
+    display: grid;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px;
+    grid-template-columns: 20% 20% 20% 20% 20%  ;
+    grid-template-areas: 
+     
+    "my-work my-work my-work my-work my-work"
+    "surf-report surf-report surf-report surf-report surf-report"
+    "led-wall led-wall led-wall led-wall led-wall"
+    "calculator calculator calculator calculator calculator"
+    "pastel-puzzles pastel-puzzles pastel-puzzles pastel-puzzles pastel-puzzles "
+    "run-buddy run-buddy run-buddy run-buddy run-buddy";
+     /* margin-bottom: 50px;
+     margin-top: 50px; */
+  }
+/* Adjusting for mobile viewing */
+  .my-work{
+    display: grid;
+    grid-area: my-work;
+    font-size: 30px;
+    justify-content: flex-start;
+    border-bottom: #6600ff solid;
+    border-right: none;
+    
+}
 }
