@@ -229,26 +229,28 @@ header {
   width: 85%;
   cursor: pointer;
   justify-content: flex-end;
-  /* align-items: center; */
+  
   font-size: 15px;
 
 }
 /* Adjustment for media queries */
 
+/* @media screen and (min-width: 980px) {
+  #about {
+    background-color: lightgreen;
+  }
+} */
+
+
 @media only screen and (max-width: 688px) {
   .contact{
-    /* display: grid; */
+    
   grid-template-columns: auto;
   grid-template-rows: 100px;
   grid-gap: 10px;
   background-color: red;
 
 
-    /* grid-template-rows: 100%;
-    grid-template-columns: 100% ;
-    grid-template-areas: 
-    "contact-me nb email gh Lin fb";
-    margin-bottom: 50px; */
   }
 }
 
@@ -268,8 +270,7 @@ header {
     "calculator calculator calculator calculator calculator"
     "pastel-puzzles pastel-puzzles pastel-puzzles pastel-puzzles pastel-puzzles "
     "run-buddy run-buddy run-buddy run-buddy run-buddy";
-     /* margin-bottom: 50px;
-     margin-top: 50px; */
+     
   }
 /* Adjusting for mobile viewing */
   .my-work{
