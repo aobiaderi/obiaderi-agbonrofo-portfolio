@@ -62,7 +62,7 @@ header {
 .hero-banner{
   display: flex;
   width: 100%;
-  background-image: url(/images/02-hero-bg.jpg);
+  background-image: url(/assets/images/02-hero-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -135,31 +135,31 @@ header {
  
 #surf-report{
   grid-area:surf-report;
-  background-image: url(./images/02-portfolio-4.jpg);
+  background-image: url(/assets/images/02-portfolio-4.jpg);
   
 }
 
 
 #led-wall{
   grid-area:led-wall;
-  background-image: url(/images/02-portfolio-1.jpg);
+  background-image: url(/assets/images/02-portfolio-1.jpg);
   
 }
 
 #calculator{
   grid-area:calculator;
-  background-image: url(/images/02-portfolio-2.jpg);
+  background-image: url(/assets/images/02-portfolio-2.jpg);
 }
 
 #pastel-puzzles{
   grid-area:pastel-puzzles;
-  background-image: url(/images/02-portfolio-3.jpg);
+  background-image: url(/assets/images/02-portfolio-3.jpg);
   
 }
 
 #run-buddy{
   grid-area:run-buddy;
-  background-image: url(/images/02-run-buddy.jpg);
+  background-image: url(/assets/images/02-run-buddy.jpg);
 }
 .portfolioGridArea {
   background-position: center;
@@ -171,9 +171,11 @@ header {
 }
 /* set properties for topic class */ 
 .topic  {
- width:40%;
+  display: inline;
+ width:20%;
  background-color:#4bafb4;
- word-wrap: break-word}
+ /* word-wrap: break-word */
+}
 
 
 /* Transforming the work section */
