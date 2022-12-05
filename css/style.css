@@ -171,7 +171,6 @@ margin: 5px;
 cursor: pointer;
 align-content: end;
 border-bottom: 5px solid #6600ff;
-display:flex;
 flex-direction: column;
 justify-content: flex-end;
 }
