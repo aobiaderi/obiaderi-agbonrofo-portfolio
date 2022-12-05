@@ -27,7 +27,7 @@ header {
   width: 100%;
   background-color:  #031722d2;
   padding: 10px 0 10px;
- }
+}
   /* Added styling to h2 in header*/
 .navbar {
   display:flex;
@@ -36,7 +36,7 @@ header {
   font-size: 30px;
   align-items: center;
   justify-content: flex-end;
- }
+}
   /* Added styling to the lists */
 .navigation {
   display: flex;
@@ -50,7 +50,7 @@ header {
   align-items: center;
   cursor: pointer;
   font-size: 20px;
-  }
+}
 
 .navigation a  {
   padding-left: 20px;
@@ -83,7 +83,7 @@ header {
   display: flex;
   width: 20%;
   height: 300px;
-  }
+}
 /* Added CSS to About Me section */
   
 #about{
@@ -106,7 +106,7 @@ header {
   width: 75%;
   font-size: 20px;
   margin-left: 2%;
-  }
+}
 
  /* Added styling to work section */
  
@@ -135,9 +135,9 @@ header {
 }   
     /* Added margins */
 #surf-report{
- grid-area:surf-report;
- background-image: url(../images/02-portfolio-4.jpg);
- margin-left: 3%;
+  grid-area:surf-report;
+  background-image: url(../images/02-portfolio-4.jpg);
+  margin-left: 3%;
 }
 
 
@@ -181,34 +181,56 @@ background-color: #4bafb4;
 
 /* Transforming the work section */
 
- #surf-report:hover{
+#surf-report:hover{
   transform:scale(1.03);
 }
 
 
 
   /* Footer Styles*/
+
 footer{
-  display: flex;
-  width:100%;
-  margin-top: 10px;
-  
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: 20% 15% 15% 15% 15% 15% ;
+  grid-template-areas: 
+  "contact-me nb email gh Lin fb";
+  margin-bottom: 50px;
 }
-footer h2{
-  display: flex;
-  width: 20%;
-  margin-bottom: 25px;
+  
+.contact-me{
+  display: grid;
+  grid-area: contact-me;
   font-size: 30px;
   justify-content: flex-end;
-  border-right: 5px solid rgba(49, 49, 187, 0.607);
+  border-right: 5px solid rgba(49, 49, 187, 0.607);  
 }
-footer a {
-  display: flex;
-  flex:1;
-  padding-right: 10px;
-  font-size: 24px;
-  width: 75%; 
-  justify-content:space-evenly;
-  justify-items: flex-end;
-      
+  
+#nb{
+  grid-area: nb;
+}
+
+#email{
+  grid-area: email;
+}
+
+#gh{
+  grid-area: gh;
+}
+
+#Lin{
+  grid-area: Lin;
+}
+
+#fb{
+  grid-area: fb;
+}
+
+.contact-me1{
+  display:flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+
 }
