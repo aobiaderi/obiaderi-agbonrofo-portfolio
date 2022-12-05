@@ -62,7 +62,7 @@ header {
 .hero-banner{
   display: flex;
   width: 100%;
-  background-image: url(/images/02-hero-bg.jpg);
+  background-image: url(./images/02-hero-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -114,8 +114,7 @@ header {
 #work{
   display: grid;
   grid-template-rows: 150px 150px 150px 150px;
-  /* grid-template-columns: 20% 20% 20% 20% 20% ; */
-  grid-template-columns: 20% 19% 19% 18.5% 18.5%;
+  grid-template-columns: 20% auto auto auto auto;
   grid-template-areas: 
    
   "my-work surf-report surf-report surf-report surf-report"
@@ -137,14 +136,14 @@ header {
 #surf-report{
   grid-area:surf-report;
   background-image: url(./images/02-portfolio-4.jpg);
-  margin-left: 3%;
+  
 }
 
 
 #led-wall{
   grid-area:led-wall;
   background-image: url(./images/02-portfolio-1.jpg);
-  margin-left: 6%;
+  
 }
 
 #calculator{
@@ -155,7 +154,7 @@ header {
 #pastel-puzzles{
   grid-area:pastel-puzzles;
   background-image: url(./images/02-portfolio-3.jpg);
-  margin-left: 6%;
+  
 }
 
 #run-buddy{
