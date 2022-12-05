@@ -109,61 +109,70 @@ header {
   }
 
  /* Added styling to work section */
- #work {
-  display: flex;
-  margin-bottom: 15px;
-  width: 100%;
-
- }
- .my-work {
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  border-right: 5px solid rgba(49, 49, 187, 0.607);
-  font-size: 30px;
-}
-
-.portfolioGridArea{
  
-display: flex;
-font-weight: bolder;
-color: darkblue;
-flex: 1;
-height: 350px;
+
+#work{
+  display: grid;
+  grid-template-rows: 150px 150px 150px 150px 150px;
+  grid-template-columns: 20% 20% 20% 20% 20% ;
+  grid-template-areas: 
+   
+  "my-work surf-report surf-report surf-report surf-report"
+  "my-work surf-report surf-report surf-report surf-report" 
+  "my-work led-wall led-wall calculator calculator"
+  "my-work pastel-puzzles pastel-puzzles run-buddy run-buddy";
+}
+.my-work{
+  display: grid;
+  grid-area: my-work;
+  font-size: 30px;
+  justify-content: flex-end;
+  border-right: 5px solid rgba(49, 49, 187, 0.607);  
+
+}   
+    
+#surf-report{
+ grid-area:surf-report;
+ background-image: url(../images/02-portfolio-4.jpg);
+
 }
 
-#surf-report {
-  
-background-image: url(/images/02-portfolio-4.jpg);
- }
 
 #led-wall{
- 
-background-image: url(/images/02-portfolio-1.jpg);
+  grid-area:led-wall;
+  background-image: url(../images/02-portfolio-1.jpg);
 }
 
-#calculator {
-   
-background-image: url(/images/02-portfolio-2.jpg);
-}
-#pastel-puzzles {
-  
-background-image: url(/images/02-portfolio-3.jpg);
+#calculator{
+  grid-area:calculator;
+  background-image: url(../images/02-portfolio-2.jpg);
 }
 
-#run-buddy {
-
-background-image: url(/images/02-run-buddy.jpg);      
+#pastel-puzzles{
+  grid-area:pastel-puzzles;
+  background-image: url(../images/02-portfolio-3.jpg);
 }
 
-.portfolioGridArea ul{
+#run-buddy{
+  grid-area:run-buddy;
+  background-image: url(../images/02-run-buddy.jpg);
+}
+.portfolioGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  align-content: end;
+  border-bottom: 5px solid #6600ff;
+} 
+/* .portfolioGridArea ul{
 
 list-style-type: none;
 background-color: #4bafb4;
-}
+} */
 
-.portfolioGridArea {
+/* .portfolioGridArea {
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
@@ -173,7 +182,7 @@ align-content: end;
 border-bottom: 5px solid #6600ff;
 flex-direction: column;
 justify-content: flex-end;
-}
+} */
 
 /* Transforming the work section */
 
