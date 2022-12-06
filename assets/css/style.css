@@ -105,7 +105,7 @@ header {
   font-size: 30px;
   align-items: center;
   justify-content: flex-end;
-  border-right: 5px solid rgba(49, 49, 187, 0.607);
+  border-right: 5px solid hwb(240 0% 88% / 0.607);
 }
 
 #about p {
@@ -130,54 +130,67 @@ header {
   "my-work led-wall led-wall calculator calculator"
   "my-work pastel-puzzles pastel-puzzles run-buddy run-buddy";
    margin-bottom: 50px;
-   margin-top: 50px;
+   
 }
 .my-work{
   display: grid;
   grid-area: my-work;
   font-size: 30px;
   justify-content: flex-end;
-  border-right: 5px solid rgba(49, 49, 187, 0.607);  
+  border-right: 5px solid hwb(240 0% 88% / 0.607);  
 
 }   
     /* Added margins */
 #surf-report{
   grid-area:surf-report;
-  background-image: url("../assets/images/02-portfolio-4.jpg");
+  /* background-image: url("../assets/images/02-portfolio-4.jpg"); */
   margin-left: 3%;
 }
 
 
 #led-wall{
   grid-area:led-wall;
-  background-image: url("../assets/images/02-portfolio-2.jpg");
+  /* background-image: url("../assets/images/02-portfolio-2.jpg"); */
   margin-left: 6%;
 }
 
 #calculator{
   grid-area:calculator;
-  background-image: url("../assets/images/02-portfolio-4.jpg");
+  /* background-image: url("../assets/images/02-portfolio-4.jpg"); */
 }
 
 #pastel-puzzles{
   grid-area:pastel-puzzles;
-  background-image:url("../assets/images/02-portfolio-3.jpg");
+  /* background-image:url("../assets/images/02-portfolio-3.jpg"); */
   margin-left: 6%;
 }
 
 #run-buddy{
   grid-area:run-buddy;
-  background-image: url("../assets/images/02-run-buddy.jpg");
+  /* background-image: url("../assets/images/02-run-buddy.jpg"); */
 }
 .portfolioGridArea {
-  background-position: center;
+  /* background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   margin: 5px;
   cursor: pointer;
-  border-bottom: 5px solid #6600ff;
+  /* border-bottom: 5px solid #6600ff; */
+
 } 
- .topic  {
+
+.heading {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid #4bafb4;;
+  
+
+}
+
+
+
+.topic  {
   width:fit-content;
   position: relative;
   top: 50%; 
@@ -210,7 +223,7 @@ footer{
   grid-area: contact-me;
   font-size: 30px;
   justify-content: flex-end;
-  border-right: 5px solid rgba(49, 49, 187, 0.607);  
+  border-right: 5px solid hwb(240 0% 88% / 0.607);  
 }
   
 #nb{
