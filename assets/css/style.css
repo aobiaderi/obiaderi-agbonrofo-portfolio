@@ -62,7 +62,7 @@ header {
 .hero-banner{
   display: flex;
   width: 100%;
-  background-image: url("/assets/images/02-hero-bg.jpg");
+  background-image: url("./assets/images/02-hero-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -136,31 +136,31 @@ header {
     /* Added margins */
 #surf-report{
   grid-area:surf-report;
-  background-image: url("/assets/images/02-portfolio-4.jpg");
+  background-image: url("./assets/images/02-portfolio-4.jpg");
   margin-left: 3%;
 }
 
 
 #led-wall{
   grid-area:led-wall;
-  background-image: url("/assets/images/02-portfolio-1.jpg");
+  background-image: url("./assets/images/02-portfolio-1.jpg");
   margin-left: 6%;
 }
 
 #calculator{
   grid-area:calculator;
-  background-image: url("/assets/images/02-portfolio-4.jpg");
+  background-image: url("./assets/images/02-portfolio-4.jpg");
 }
 
 #pastel-puzzles{
   grid-area:pastel-puzzles;
-  background-image:url("/assets/images/02-portfolio-3.jpg");
+  background-image:url("./assets/images/02-portfolio-3.jpg");
   margin-left: 6%;
 }
 
 #run-buddy{
   grid-area:run-buddy;
-  background-image: url("/assets/images/02-run-buddy.jpg");
+  background-image: url("./assets/images/02-run-buddy.jpg");
 }
 .portfolioGridArea {
   background-position: center;
