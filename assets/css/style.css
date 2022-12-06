@@ -61,28 +61,27 @@ header {
 }
 .hero-banner{
   display: flex; 
-  width: 100%;}
- 
-.sub-title {
-  display: flex;
   width: 100%;
+  background-image: url(../images/02-hero-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 15px;  
-  height: 300px;
+  position: relative;
+  margin-bottom: 15px; 
+} 
  
-}
-.sub-title1 {
+
+.sub-title {
   display: flex;
-  font-size: 20px;
+  font-size: 30px;
   width: 75%;
   color: blueviolet;
+  align-items:flex-end;
   justify-content:flex-end;
-  position: absolute;
+  /* position: absolute;
   right: 100px;
   top: 300px; 
-  z-index: 100; 
+  z-index: 100;  */
 
 }
 
@@ -213,7 +212,7 @@ header {
 }
   
 .topic #surf-report{
-  top: 25%;
+  top: 80%;
 
 }  
 
@@ -276,22 +275,23 @@ footer{
   font-size: 20px;
 
 }
-/* Adjustment for media queries */
+/* Adjustment for media queries 688px*/
 
 @media only screen and (max-width: 688px) {
-  .contact{
-    /* display: grid; */
-  grid-template-columns: auto;
+  footer{
+    display: grid;
+  /* grid-template-columns: auto;
   grid-template-rows: 100px;
   grid-gap: 10px;
-  background-color: red;
+  background-color: red; */
 
 
-    /* grid-template-rows: 100%;
-    grid-template-columns: 100% ;
+    grid-template-rows: 20% 18% 18% 18% 18% 18%;
+    grid-template-columns: auto;
+    row-gap: 5px;
     grid-template-areas: 
-    "contact-me nb email gh Lin fb";
-    margin-bottom: 50px; */
+    "contact-me nb ema gh lk fb";
+    margin-bottom: 50px; 
   }
 }
 
