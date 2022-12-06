@@ -62,7 +62,7 @@ header {
 .hero-banner{
   display: flex;
   width: 100%;
-  background-image: url(/images/02-hero-bg.jpg);
+  background-image: url("/assets/images/02-hero-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -114,7 +114,8 @@ header {
 #work{
   display: grid;
   grid-template-rows: 150px 150px 150px 150px;
-  grid-template-columns: 20% auto auto auto auto;
+  /* grid-template-columns: 20% 20% 20% 20% 20% ; */
+  grid-template-columns: 20% 19% 19% 18.5% 18.5%;
   grid-template-areas: 
    
   "my-work surf-report surf-report surf-report surf-report"
@@ -132,34 +133,34 @@ header {
   border-right: 5px solid rgba(49, 49, 187, 0.607);  
 
 }   
- 
+    /* Added margins */
 #surf-report{
   grid-area:surf-report;
-  background-image: url(./images/02-portfolio-4.jpg);
-  
+  background-image: url("/assets/images/02-portfolio-4.jpg");
+  margin-left: 3%;
 }
 
 
 #led-wall{
   grid-area:led-wall;
-  background-image: url(./im);
-  
+  background-image: url("/assets/images/02-portfolio-1.jpg");
+  margin-left: 6%;
 }
 
 #calculator{
   grid-area:calculator;
-  background-image: url(./images/02-portfolio-2.jpg);
+  background-image: url("/assets/images/02-portfolio-4.jpg");
 }
 
 #pastel-puzzles{
   grid-area:pastel-puzzles;
-  background-image: url(./images/02-portfolio-3.jpg);
-  
+  background-image:url("/assets/images/02-portfolio-3.jpg");
+  margin-left: 6%;
 }
 
 #run-buddy{
   grid-area:run-buddy;
-  background-image: url(./images/02-run-buddy.jpg);
+  background-image: url("/assets/images/02-run-buddy.jpg");
 }
 .portfolioGridArea {
   background-position: center;
@@ -167,13 +168,17 @@ header {
   background-repeat: no-repeat;
   margin: 5px;
   cursor: pointer;
+  /* align-items: center;
+  display: flex;
+  position:bottom; */
   border-bottom: 5px solid #6600ff;
-}
-/* set properties for topic class */ 
-.topic  {
- width:40%;
- background-color:#4bafb4;
- word-wrap: break-word}
+} 
+ .topic  {
+  width:fit-content;
+  position: relative;
+  top: 50%; 
+  background-color:#4bafb4;}
+  
 
 
 /* Transforming the work section */
@@ -186,19 +191,19 @@ header {
 
   /* Footer Styles*/
 
-#contact{
+footer{
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 20% auto auto auto auto auto ;
+  grid-template-rows: 50px;
+  grid-template-columns: 20% 15% 15% 15% 15% 15% ;
   grid-gap:10px;
   grid-template-areas: 
-  "contacts nb ema gh lk fb";
+  "contact-me nb ema gh lk fb";
   margin-bottom: 50px;
 }
   
-.contacts{
+.contact-me{
   display: grid;
-  grid-area: contacts;
+  grid-area: contact-me;
   font-size: 30px;
   justify-content: flex-end;
   border-right: 5px solid rgba(49, 49, 187, 0.607);  
@@ -225,32 +230,30 @@ header {
 }
 
 .contact-me1{
-  display:grid;
-  width: 85%;
+  /* display:grid;
+  width: 75%; */
   cursor: pointer;
-  justify-content: flex-end;
-  
-  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
 
 }
 /* Adjustment for media queries */
 
-/* @media screen and (min-width: 980px) {
-  #about {
-    background-color: lightgreen;
-  }
-} */
-
-
 @media only screen and (max-width: 688px) {
   .contact{
-    
+    /* display: grid; */
   grid-template-columns: auto;
   grid-template-rows: 100px;
   grid-gap: 10px;
   background-color: red;
 
 
+    /* grid-template-rows: 100%;
+    grid-template-columns: 100% ;
+    grid-template-areas: 
+    "contact-me nb email gh Lin fb";
+    margin-bottom: 50px; */
   }
 }
 
@@ -270,7 +273,8 @@ header {
     "calculator calculator calculator calculator calculator"
     "pastel-puzzles pastel-puzzles pastel-puzzles pastel-puzzles pastel-puzzles "
     "run-buddy run-buddy run-buddy run-buddy run-buddy";
-     
+     /* margin-bottom: 50px;
+     margin-top: 50px; */
   }
 /* Adjusting for mobile viewing */
   .my-work{
