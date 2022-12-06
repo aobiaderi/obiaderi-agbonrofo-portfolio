@@ -122,15 +122,15 @@ header {
   display: grid;
   grid-gap:10px;
   grid-template-rows: 150px 150px 150px 150px;
-  /* grid-template-columns: 20% 20% 20% 20% 20% ; */
-  grid-template-columns: 20% 19% 19% 18.5% 18.5%;
+  grid-template-columns: 20% auto auto auto auto ;
+  /* grid-template-columns: 20% 19% 19% 18.5% 18.5%; */
   grid-template-areas: 
    
   "my-work surf-report surf-report surf-report surf-report"
   "my-work surf-report surf-report surf-report surf-report" 
   "my-work led-wall led-wall calculator calculator"
   "my-work pastel-puzzles pastel-puzzles run-buddy run-buddy";
-   margin-bottom: 80px;
+   margin-bottom: 50px;
    margin-top: 50px;
    
    
@@ -148,7 +148,7 @@ header {
   grid-area:surf-report;
   /* background-image: url("../assets/images/02-portfolio-4.jpg"); */
   background-image: url("../images/02-portfolio-4.jpg");
-  margin-left: 3%;
+  /* margin-left: 3%; */
 }
 
 
@@ -156,7 +156,7 @@ header {
   grid-area:led-wall;
   /* background-image: url("../assets/images/02-portfolio-2.jpg"); */
   background-image: url("../images/02-portfolio-2.jpg");
-  margin-left: 6%;
+  /* margin-left: 6%; */
 }
 
 #calculator{
@@ -170,7 +170,7 @@ header {
   grid-area:pastel-puzzles;
   /* background-image:url("../assets/images/02-portfolio-3.jpg"); */
   background-image:url("../images/02-portfolio-3.jpg");
-  margin-left: 6%;
+  /* margin-left: 6%; */
 }
 
 #run-buddy{
@@ -203,14 +203,19 @@ header {
   top: -60px;
 } */
 
-
+/* set properties for topic class */
 .topic  {
   width:fit-content;
   position: relative;
   /* top: 80%;  */
   top: 50%;
-  background-color:#4bafb4;}
+  background-color:#4bafb4;
+}
   
+.topic #surf-report{
+  top: 25%;
+
+}  
 
 
 /* Transforming the work section */
@@ -225,8 +230,9 @@ header {
 
 footer{
   display: grid;
-  grid-template-rows: 50px;
-  grid-template-columns: 20% 15% 15% 15% 15% 15% ;
+  grid-template-rows: auto;
+  /* grid-template-columns: 20% 15% 15% 15% 15% 15% ; */
+  grid-template-columns: 20% auto auto auto auto auto ;
   grid-gap:10px;
   grid-template-areas: 
   "contact-me nb ema gh lk fb";
@@ -262,12 +268,12 @@ footer{
 }
 
 .contact-me1{
-  /* display:grid;
-  width: 75%; */
+  display:grid;
+  width: 85%;
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  font-size: 22px;
+  justify-content: flex-end;
+  /* align-items: center; */
+  font-size: 20px;
 
 }
 /* Adjustment for media queries */
