@@ -120,6 +120,7 @@ header {
 
 #work{
   display: grid;
+  grid-gap:10px;
   grid-template-rows: 150px 150px 150px 150px;
   /* grid-template-columns: 20% 20% 20% 20% 20% ; */
   grid-template-columns: 20% 19% 19% 18.5% 18.5%;
@@ -129,7 +130,9 @@ header {
   "my-work surf-report surf-report surf-report surf-report" 
   "my-work led-wall led-wall calculator calculator"
   "my-work pastel-puzzles pastel-puzzles run-buddy run-buddy";
-   margin-bottom: 50px;
+   margin-bottom: 80px;
+   margin-top: 50px;
+   
    
 }
 .my-work{
@@ -169,31 +172,28 @@ header {
   grid-area:run-buddy;
   /* background-image: url("../assets/images/02-run-buddy.jpg"); */
 }
-.portfolioGridArea {
-  /* background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; */
-  margin: 5px;
-  cursor: pointer;
-  /* border-bottom: 5px solid #6600ff; */
 
-} 
 
 .heading {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 4px solid #4bafb4;;
-  
+  border: 4px solid #4bafb4;
+  cursor: pointer;
+  /* display: flex; */
 
 }
-
+.portfolioGridArea{
+  /* display:flex; */
+  position: relative;
+  top: -60px;
+}
 
 
 .topic  {
   width:fit-content;
   position: relative;
-  top: 50%; 
+  top: 80%; 
   background-color:#4bafb4;}
   
 
