@@ -60,23 +60,30 @@ header {
   /* Added styling to the hero section */  
 }
 .hero-banner{
+  display: flex; 
+  width: 100%;}
+ 
+.sub-title {
   display: flex;
   width: 100%;
-  background-image: url("./assets/images/02-hero-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 15px;  
+  height: 300px;
  
 }
-.sub-title {
+.sub-title1 {
   display: flex;
+  font-size: 20px;
   width: 75%;
-  font-size: 30px;
   color: blueviolet;
   justify-content:flex-end;
-  align-items:center;  
+  position: absolute;
+  right: 100px;
+  top: 300px; 
+  z-index: 100; 
+
 }
 
 .my-image {
@@ -143,24 +150,24 @@ header {
 
 #led-wall{
   grid-area:led-wall;
-  background-image: url("./assets/images/02-portfolio-1.jpg");
+  background-image: url("/assets/images/02-portfolio-2.jpg");
   margin-left: 6%;
 }
 
 #calculator{
   grid-area:calculator;
-  background-image: url("./assets/images/02-portfolio-4.jpg");
+  background-image: url("/assets/images/02-portfolio-4.jpg");
 }
 
 #pastel-puzzles{
   grid-area:pastel-puzzles;
-  background-image:url("./assets/images/02-portfolio-3.jpg");
+  background-image:url("/assets/images/02-portfolio-3.jpg");
   margin-left: 6%;
 }
 
 #run-buddy{
   grid-area:run-buddy;
-  background-image: url("./assets/images/02-run-buddy.jpg");
+  background-image: url("/assets/images/02-run-buddy.jpg");
 }
 .portfolioGridArea {
   background-position: center;
@@ -168,9 +175,6 @@ header {
   background-repeat: no-repeat;
   margin: 5px;
   cursor: pointer;
-  /* align-items: center;
-  display: flex;
-  position:bottom; */
   border-bottom: 5px solid #6600ff;
 } 
  .topic  {
