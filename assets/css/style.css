@@ -277,23 +277,43 @@ footer{
 }
 /* Adjustment for media queries 688px*/
 
-@media only screen and (max-width: 688px) {
+@media only screen and (max-width: 770px) {
   footer{
-    display: grid;
-  /* grid-template-columns: auto;
-  grid-template-rows: 100px;
-  grid-gap: 10px;
-  background-color: red; */
+  display: grid;
+  /* grid-template-rows: auto auto auto auto auto auto; */
+  /* grid-template-columns: auto; */
+  /* grid-template-areas: 
+      "contact-me contact-me contact-me contact-me contact-me contact-me   "
+    "nb nb nb nb nb nb"
+    "ema ema " 
+    "gh" 
+    "lk"
+    "fb"; */
+   /* margin-bottom: 50px;  */
 
 
-    grid-template-rows: 20% 18% 18% 18% 18% 18%;
-    grid-template-columns: auto;
-    row-gap: 5px;
+    grid-template-columns: 120px 120px 120px 120px 120px 120px;
+    grid-template-rows: auto;
     grid-template-areas: 
-    "contact-me nb ema gh lk fb";
-    margin-bottom: 50px; 
+
+    "contact-me contact-me contact-me contact-me contact-me contact-me"
+    "nb nb nb nb nb nb"
+    "ema ema ema ema ema ema"
+    "gh gh gh gh gh gh"
+    "lk lk lk lk lk lk"
+    "fb fb fb fb fb fb";
+    
+  }
+
+  .contact-me{
+    display: flex;
+    border-bottom: solid 5px hwb(240 0% 88% / 0.607);
+    border-right:none;
+    justify-content: flex-start;
+    margin-left: 30px;
   }
 }
+
 
 @media only screen and (max-width: 770px) {
 
