@@ -321,6 +321,7 @@ footer{
     width: fit-content;
 
 }
+}
 
 
 @media only screen and (max-width: 770px) {
@@ -330,7 +331,8 @@ footer{
     margin-left: 5%;
     margin-right: 5%;
     grid-template-rows: 150px 150px 150px 150px 150px 150px;
-    grid-template-columns: 20% 20% 20% 20% 20%  ;
+    grid-template-columns: auto ;
+    /* grid-template-columns: 20% 20% 20% 20% 20%  ; */
     grid-template-areas: 
      
     "my-work my-work my-work my-work my-work"
@@ -344,12 +346,21 @@ footer{
   }
 /* Adjusting for mobile viewing */
   .my-work{
-    display: grid;
-    grid-area: my-work;
+    display: flex;
+    /* grid-area: my-work; */
     font-size: 30px;
     justify-content: flex-start;
-    border-bottom: #6600ff solid;
+    border-bottom:  hwb(240 0% 88% / 0.607) solid 5px;
     border-right: none;
-    
+    position: relative;
+    top: 50%;
+    margin-bottom: 80px;
+      
 }
+#about{
+  display: flex;
+  width: 100%;
+  margin-bottom: -80px;  
+}
+
 }
