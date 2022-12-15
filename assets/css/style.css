@@ -312,6 +312,14 @@ footer{
     justify-content: flex-start;
     margin-left: 30px;
   }
+
+  .contact-me1{
+    margin-left: 30px;
+    border-bottom: solid 5px hwb(240 0% 88% / 0.607);
+    text-decoration: none;
+    justify-content:left;
+    width: fit-content;
+
 }
 
 
